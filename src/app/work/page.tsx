@@ -15,20 +15,40 @@ import Image from "next/image";
 import WorkSliderBtn from "@/components/ui/workSliderBtn";
 
 const projects = [
-  
   {
-    num: "02",
+    num: "01",
     catagories: "E-Commerce",
     title: "A Shopping Website",
     description:
-      "Buy Cool Products",
-    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Stripe" }, { name: "WixClient" }],
-    image: "/assets/work/Lamashop.png",
-    live: "https://casecobra-2wik.vercel.app/",
+      "Electronics Gadget Store: sleek design, responsive layout, and seamless shopping experience.",
+    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Sanity" }],
+    image: "/assets/work/gadgetglide.png",
+    live: "https://gadget-glide.vercel.app",
+    github: "https://github.com/RafiaSuleman/GadgetGlide"
+  },
+  {
+    num: "02",
+    catagories: "E-Commerce",
+    title: "A Shopping Website- Kitchen Utensils Store",
+    description:
+      "Top Kitchen products online store: sleek design, responsive layout, and seamless shopping experience.",
+    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "Sanity" }, { name: "GROQ" },{ name: "AIChatbot" }],
+    image: "/assets/work/kitchenutinsils.png",
+    live: "https://kitchen-utensils-store.vercel.app/",
    
   },
-
-  {
+{
+    num: "03",
+    catagories: "E-Commerce",
+    title: "GadgetGlide",
+    description:
+      "EDeveloped a full-stack e-commerce platform with secure JWT authentication, product management, order tracking, analytics dashboard, and Sanity CMS integration.",
+    stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }, { name: "Sanity CMS" }, { name: "JWT Authentication" }, { name: "Recharts" }],
+    image: "/assets/work/image.png.png",
+    live: "https://gadget-glide.vercel.app/",
+   
+  },
+ /* {
     num: "03",
     catagories: "E-Commerce",
     title: "CaseCobra",
@@ -38,7 +58,7 @@ const projects = [
     image: "/assets/work/casecobra.png",
     live: "https://casecobra-2wik.vercel.app/",
    
-  },
+  },*/
   {
     num: "04",
     catagories: "Frontend",
@@ -52,14 +72,15 @@ const projects = [
   },
  
   {
+    // isma addition kr rahe hn jo k cv ma add ho gi
     num: "05",
     catagories: "E-Commerce",
     title: "nextCommerce",
     description:
-      "Stylish garments website: clean design, responsive layout, seamless navigation",
+      "Stylish website: clean design, responsive layout, seamless navigation",
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" },{ name: "Sanity" }],
     image: "/assets/work/ecommerce.jpg",
-    live: "https://sunnygarments.vercel.app/",
+    live: "https://e-commerce-platform-sage.vercel.app/",
    
   },
   {
@@ -97,7 +118,7 @@ const projects = [
       "Comprehensive Quranic app: intuitive interface, guidance, and easy navigation.",
     stack: [{ name: "Tailwindcss" }, { name: "nextjs" }, { name: "typeScript" }],
     image: "/assets/work/qariapp.jpg",
-    live: "https://quranic-guide.vercel.app/",
+    live: "https://quranic-guide-qariapp.vercel.app/",
   },
   {
     num: "07",
@@ -110,17 +131,6 @@ const projects = [
     live: "https://quranic-guide-qariapp-26cewznsq-rafia-khurshids-projects.vercel.app/about",
    
   },
-  {
-    num: "01",
-    catagories: "E-Commerce",
-    title: "A Shopping Website",
-    description:
-      "Buy Cool Products",
-    stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Stripe" }],
-    image: "/assets/work/Econ_tut.PNG",
-    live: "https://casecobra-2wik.vercel.app/",
-   
-  }
 ];
 
 
