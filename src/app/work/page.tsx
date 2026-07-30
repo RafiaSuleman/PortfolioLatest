@@ -37,17 +37,6 @@ const projects = [
     live: "https://kitchen-utensils-store.vercel.app/",
    
   },
-{
-    num: "03",
-    catagories: "E-Commerce",
-    title: "GadgetGlide",
-    description:
-      "EDeveloped a full-stack e-commerce platform with secure JWT authentication, product management, order tracking, analytics dashboard, and Sanity CMS integration.",
-    stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }, { name: "Sanity CMS" }, { name: "JWT Authentication" }, { name: "Recharts" }],
-    image: "/assets/work/image.png",
-    live: "https://gadget-glide.vercel.app/",
-   
-  },
  /* {
     num: "03",
     catagories: "E-Commerce",
