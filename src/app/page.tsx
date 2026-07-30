@@ -24,9 +24,6 @@ export default function Home() {
                 />
             </div>
           </div>
-         {/*  <div className="h-full w-full xl:order-none mb-8 xl:mb-0 flex justify-center items-center ">
-            <Photo />
-          </div> */}
         </div>
         <Stats />
       </div>
