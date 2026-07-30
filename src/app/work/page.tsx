@@ -44,7 +44,7 @@ const projects = [
     description:
       "EDeveloped a full-stack e-commerce platform with secure JWT authentication, product management, order tracking, analytics dashboard, and Sanity CMS integration.",
     stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }, { name: "Sanity CMS" }, { name: "JWT Authentication" }, { name: "Recharts" }],
-    image: "/assets/work/image.png.png",
+    image: "/assets/work/image.png",
     live: "https://gadget-glide.vercel.app/",
    
   },
