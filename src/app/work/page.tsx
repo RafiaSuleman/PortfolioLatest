@@ -18,9 +18,9 @@ const projects = [
   {
     num: "01",
     catagories: "E-Commerce",
-    title: "A Shopping Website",
+    title: "A Shopping Website - Electronics Gadget Store",
     description:
-      "Electronics Gadget Store: sleek design, responsive layout, and seamless shopping experience.",
+      "sleek design, responsive layout, and seamless shopping experience.",
     stack: [{ name: "Tailwindcss" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Sanity" }],
     image: "/assets/work/gadgetglide.png",
     live: "https://gadget-glide.vercel.app",
