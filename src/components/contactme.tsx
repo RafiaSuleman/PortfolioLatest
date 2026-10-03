@@ -1,9 +1,17 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -25,7 +33,7 @@ const info = [
   },
 ];
 
-const Contact = () => {
+const Contactme = () => {
   const [formData, setFormData] = useState({
     name: "",
     lastname: "",
@@ -35,7 +43,9 @@ const Contact = () => {
     service: "", // added service to the state
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
       ...prevState,
@@ -63,7 +73,14 @@ const Contact = () => {
 
       if (response.ok) {
         alert("Message sent successfully!");
-        setFormData({ name: "", lastname: "", email: "", message: "", phoneNo: "", service: "" });
+        setFormData({
+          name: "",
+          lastname: "",
+          email: "",
+          message: "",
+          phoneNo: "",
+          service: "",
+        });
       } else {
         const result = await response.json();
         alert(`Failed to send message: ${result.error}`);
@@ -86,7 +103,10 @@ const Contact = () => {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px] ">
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-white/30 rounded-xl">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-6 p-10 bg-white/30 rounded-xl"
+            >
               <h3 className="text-4xl text-white">Let us Connect</h3>
               <p className="text-white/60">
                 Whether you have a project in mind, need assistance, feel free
@@ -141,7 +161,12 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel> Select a service </SelectLabel>
-                    <SelectItem value="Web Development">Web Development</SelectItem>
+                    <SelectItem value="Web Development">
+                      Web Development
+                    </SelectItem>
+                    <SelectItem value="AWS Cloud Deployment">
+                      AWS Cloud Deployment
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -156,7 +181,10 @@ const Contact = () => {
                 required
               ></Textarea>
 
-              <Button size="default" className="max-w-40 flex items-center bg-white hover:bg-[#F7AB4E]">
+              <Button
+                size="default"
+                className="max-w-40 flex items-center bg-[#8B5CF6] text-white hover:bg-[#7C3AED]"
+              >
                 Send message
               </Button>
             </form>
@@ -186,4 +214,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contactme;

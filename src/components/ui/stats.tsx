@@ -24,7 +24,7 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="pt-12">
+    <section className="pt-8">
       <div className="container mx-auto">
         <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
           {stats.map((item, index) => (
