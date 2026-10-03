@@ -4,9 +4,6 @@ import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 import Header from "@/components/header";
 const inter = Inter({ subsets: ["latin"] });
-import PageTransition from '../components/ui/PageTransition'
-import StairTransition from '../components/ui/StairTransition'
-import { cn } from "@/lib/utils";
 
 const JetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -27,8 +24,8 @@ export default function RootLayout({
       <body className={JetBrainsMono.variable} >
         <main>
         <Header/>
-         <StairTransition/> 
-        <PageTransition> {children}</PageTransition>
+      
+         {children}
        
         </main>
       
