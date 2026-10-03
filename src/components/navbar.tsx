@@ -1,39 +1,27 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+
+const links = [
+  { name: "Home", path: "#home" },
+  { name: "About", path: "#about" },
+  { name: "Skills", path: "#skills" },
+  { name: "Projects", path: "#projects" },
+  { name: "Contact", path: "#contact" },
+];
+
 const Navbar = () => {
-  const Links = [
-    {
-      name: "Home",
-      path: "/",
-    },
-   
-    {
-      name: "Resume",
-      path: "/resume",
-    },
-    {
-      name: "Work",
-      path: "/work",
-    },
-   
-  ];
-  const PathName = usePathname();
   return (
     <nav className="flex gap-8">
-      {Links.map((link, index) => (
-       <>
-          <Link
-          key={index}
-            href={link.path}
-            className={`${
-              link.path === PathName &&
-              " border-b-2 border-color bg-color px-1 rounded-md"
-            } capatilize font-medium transition-all`}>
-            {link.name}
-          </Link>
-          </>
+      {links.map((link) => (
+        <Link
+          href={link.path}
+          key={link.name}
+          className="capitalize font-medium text-white/80 hover:text-color transition-all duration-300"
+        >
+          {link.name}
+        </Link>
       ))}
     </nav>
   );

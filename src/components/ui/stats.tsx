@@ -1,44 +1,47 @@
 "use client";
-import { Section } from "lucide-react";
+
 import React from "react";
 import CountUp from "react-countup";
 
 const stats = [
   {
     num: 3,
-    text: "year of experiance",
+    text: "Years Learning & Building",
   },
   {
-    num: 7,
-    text: "Project Completed",
+    num: 20,
+    text: "Projects Completed",
   },
   {
-    num: 8,
+    num: 10,
     text: "Technologies & Tools",
   },
   {
-    num: 50,
-    text: "Code Commits",
+    num: 1,
+    text: "AWS Cloud Project",
   },
 ];
+
 const Stats = () => {
   return (
-    <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
+    <section className="pt-12">
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
-          {stats.map((item, index) => {
-            return (
-              <div className="flex-1 flex gap-4 items-center justify-center xl:justify-start" key={index}>
-                <CountUp
-                  end={item.num}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
-                />
-                <p className={`${item.text.length <15 ? "max-w-[150px]": "max-w-[150px]"} leading-snug text-white/80`}>{item.text}</p>
-              </div>
-            );
-          })}
+        <div className="grid grid-cols-2 xl:grid-cols-4 gap-8">
+          {stats.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center"
+            >
+              <CountUp
+                end={item.num}
+                duration={3}
+                className="text-4xl xl:text-5xl font-extrabold gradient-text"
+              />
+              <p className="mt-2 text-sm text-white/60 max-w-[150px]">
+                {item.text}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
