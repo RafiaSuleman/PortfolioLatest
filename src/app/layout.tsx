@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { JetBrains_Mono } from "next/font/google";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 const JetBrainsMono = JetBrains_Mono({
@@ -24,11 +25,9 @@ export default function RootLayout({
       <body className={JetBrainsMono.variable} >
         <main>
         <Header/>
-      
          {children}
-       
         </main>
-      
+        <Footer/>
       </body>
     </html>
   );
